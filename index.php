@@ -33,9 +33,22 @@
 					</div>
 				</div>
 			</div>
-			<section class="price grid">
-				<h2 class="price_header"><i class="fa fa-calculator" aria-hidden="true"></i> Стоимость грузоперевозок</h2>
+			<section class="info grid">
 				<div class="price_contayner grid">
+					<div class="item_info header"><h3>Размер груза</h3></div>
+					<div class="item_info">Длинна: </div>
+					<div class="item_info">Ширина: </div>
+					<div class="item_info">Высота: </div>
+				</div>
+			</section>
+			<section class="rating">
+				<div class="item_rating">Рейтинг перевозчиков</div>
+			</section>
+			<section class="price grid">
+				<div class="price_contayner grid">
+					<div class="item_price header">
+						<h2 class="price_header"><i class="fa fa-calculator" aria-hidden="true"></i> Стоимость грузоперевозок</h2>
+					</div>
 					<div class="item_price" style="background: #B2C9C3">
 						<p class="item_icon">
 							<i class="fa fa-road" aria-hidden="true"></i></i>
