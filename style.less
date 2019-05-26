@@ -10,6 +10,9 @@ html, body{
 	height: 100vh;
 	// background: #23282b;
 }
+i.fa{
+	margin-right: 20;
+}
 footer{
 	position:fixed;
 	top: 97%;
@@ -45,6 +48,18 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	max-width: 1200px;
 	margin: 0 auto;
 }
+.contayner_grid{
+	display: grid;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	grid-column-gap: 50px;
+	// grid-row-gap: 50px;
+}
+
 .header_yellow{
 	position: fixed;
 	width: 100%;
@@ -94,40 +109,47 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	}
 }
 .info{
+	background: #343e40;
 	margin-top: 25*2px;
-	background: green;
 	align-items: center;
-	.price_contayner{
-		// padding-bottom: 50px;
-		// margin: 0 auto;
-		// padding-left: 20px;
-		// padding-right: 20px;
-		// grid-template-columns: 1fr 1fr 1fr;
-		justify-items: center;
-		// grid-column-gap: 50px;
-		// grid-row-gap: 50px;
-		.item_info.header{
-			grid-column-start: 1;
-			grid-column-end: 4;
-			border: none;
-			background: none;
-		}
-		.item_info{
-			// border: 4px solid #b3b3b3;
-			border: 2px solid #747A90;
-			border-radius: 15px;
-			background: #fff;
-			text-align: start;
-			align-self: center;
-			padding: 0 10px;
-		}
+	border: 2px solid #666;
+	border-top: none;
+	.item_info.header{
+		color: #81B5E4;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		border: none;
+		background: none;
+	}
+	.item_info{
+		// border: 4px solid #b3b3b3;
+		border: 2px solid #747A90;
+		border-radius: 15px;
+		background: #fff;
+		text-align: start;
+		align-self: center;
+		padding: 10px 20px;
+		color: #FFFF00;
+		font-size: 18px;
+		text-align: center;
+	}
+	.long{
+		background: #6699CC;
+	}
+	.width{
+		background: #339999;
+	}
+	.height{
+		background: #669966;
 	}
 }
 .price{
 	// background: #a8b6e3;
 	background: #343e40;
+	border: 2px solid #666;
+	border-top: none;
 	// margin-top: 25px;
-	height: 100vh;
+	// height: 100vh;
 	align-items: center;
 	.price_header{
 		// color: #006666;
@@ -136,75 +158,65 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		font-size: 30px;
 		align-self: start;
 	}
-	.price_contayner{
-		padding-bottom: 50px;
-		margin: 0 auto;
-		padding-left: 20px;
-		padding-right: 20px;
-		grid-template-columns: 1fr 1fr 1fr;
-		justify-items: center;
-		grid-column-gap: 50px;
-		grid-row-gap: 50px;
-		.item_price.header{
-			grid-column-start: 1;
-			grid-column-end: 4;
-			border: none;
-			background: none;
-		}
-		.item_price{
-			// border: 4px solid #b3b3b3;
-			border: 2px solid #747A90;
-			border-radius: 15px;
-			background: #fff;
-			text-align: start;
-			align-self: center;
-			padding: 0 10px;
-			.item_icon{
-				.fa-plus{
-					color: #006699;
-				}
-				color: #669966;
-				.distance_price{
-					font-weight: bold;
-					color: #009900;
-				}
-				.distance_interval{
-					color: #990066;
-					.fa-chevron-right{
-						// font-size: 10px;
-					}
-				}
-			}
-			.distance{
-				color: #006666;
-				margin-left: 10px;
-			}
-			.hour{
-				color: #003300;
-				margin-left: 10px;
-				.hour_time{
-					color: #993300;
-				}
-				.dop_time{
-					color: #CC0000;
-				}
-				.hour_each{
-					font-weight: bold;
-				}
-			}
-			.price_km{
+	.item_price.header{
+		grid-column-start: 1;
+		grid-column-end: 4;
+		border: none;
+		background: none;
+	}
+	.item_price{
+		// border: 4px solid #b3b3b3;
+		border: 2px solid #747A90;
+		border-radius: 15px;
+		background: #fff;
+		text-align: start;
+		align-self: center;
+		padding: 0 10px;
+		.item_icon{
+			.fa-plus{
 				color: #006699;
-				margin-left: 10px;
 			}
-			.item_button{
-				border: 1.5px solid #00CC99 !important;
-				border-radius: 10px;
-				background: #CCFFFF;
-			    border: none;
-			    cursor: pointer;
-			    font-weight: bold;
-			    color: #336633;
+			color: #669966;
+			.distance_price{
+				font-weight: bold;
+				color: #009900;
 			}
+			.distance_interval{
+				color: #990066;
+				.fa-chevron-right{
+					// font-size: 10px;
+				}
+			}
+		}
+		.distance{
+			color: #006666;
+			margin-left: 10px;
+		}
+		.hour{
+			color: #003300;
+			margin-left: 10px;
+			.hour_time{
+				color: #993300;
+			}
+			.dop_time{
+				color: #CC0000;
+			}
+			.hour_each{
+				font-weight: bold;
+			}
+		}
+		.price_km{
+			color: #006699;
+			margin-left: 10px;
+		}
+		.item_button{
+			border: 1.5px solid #00CC99 !important;
+			border-radius: 10px;
+			background: #CCFFFF;
+		    border: none;
+		    cursor: pointer;
+		    font-weight: bold;
+		    color: #336633;
 		}
 	}
 }
@@ -325,7 +337,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		}
 	}
 
-	.price_contayner{
+	.contayner_grid{
 		display: block;
 	}
 }
