@@ -14,6 +14,9 @@
 	<title>Грузовые перевозки</title>
 </head>
 <body>
+	<div class="before">
+		
+	</div>
 	<div class="wrapper">
 		<header class="grid">
 			<div class="fixed">
@@ -33,23 +36,50 @@
 					</div>
 				</div>
 			</div>
-			<section class="info grid">
-				<div class="price_contayner grid">
-					<div class="item_info header"><h3>Размер груза</h3></div>
-					<div class="item_info">Длинна: </div>
-					<div class="item_info">Ширина: </div>
-					<div class="item_info">Высота: </div>
+			<section class="size_gruza grid">
+				<h2><i class="fa fa-th-list" aria-hidden="true"></i> Максимальный размер груза</h2>
+				<div class="grid">
+					<div class="item_size_gruza evropallet text_center">
+						<p>
+							<span class="number_grin">15</span>
+							<span class="text_evropallet">европаллет</span>
+						</p>
+					</div>
+					<div class="item_size_gruza body_volume">
+						<h3>Объем кузова:</h3>
+						<p>
+							<span class="number_grin">35</span>
+							<span class="text_body_volume">куб м;</span>
+						</p>
+					</div>
+					<div class="item_size_gruza long_width_height">
+						<p class="long">
+							<i class="fa fa-th" aria-hidden="true"></i>
+							<span class="long_width_height_text">Длинна:</span>
+							<span class="long_width_height_number">6 м</span>
+						</p>
+						<p class="width">
+							<i class="fa fa-th" aria-hidden="true"></i>
+							<span class="long_width_height_text">Ширина:</span>
+							<span class="long_width_height_number">2,5 м</span>
+						</p>
+						<p class="height">
+							<i class="fa fa-th" aria-hidden="true"></i>
+							<span class="long_width_height_text">Высота:</span>
+							<span class="long_width_height_number">2,2 м</span>
+						</p>
+					</div>
 				</div>
 			</section>
 			<section class="rating">
-				<div class="item_rating">Рейтинг перевозчиков</div>
+				<!-- <div class="item_rating">Рейтинг перевозчиков</div> -->
 			</section>
 			<section class="price grid">
-				<div class="price_contayner grid">
+				<div class="contayner_grid">
 					<div class="item_price header">
 						<h2 class="price_header"><i class="fa fa-calculator" aria-hidden="true"></i> Стоимость грузоперевозок</h2>
 					</div>
-					<div class="item_price" style="background: #B2C9C3">
+					<div class="item_price item_price_number_1" style="background: #B2C9C3;">
 						<p class="item_icon">
 							<i class="fa fa-road" aria-hidden="true"></i></i>
 							<span class="distance">до 100 km 
@@ -67,14 +97,14 @@
 						</p>
 						<p class="item_icon">
 							<!-- <i class="fa fa-sitemap" aria-hidden="true"></i> -->
-							<i class="fa fa-plus" aria-hidden="true"></i> 
-							<span class="price_km">цена за 1 km 
-								<span class="distance_price">25 ₽</span>
-							</span>
+							<!-- <i class="fa fa-plus" aria-hidden="true"></i>  -->
+							<!-- <span class="price_km">цена за 1 km  -->
+								<!-- <span class="distance_price">25 ₽</span> -->
+							<!-- </span> -->
 						<p>
-						<p class="center"><button class="item_button">Рассчитать<br>стоимость перевозки</button></p>
+						<p class="text-center"><button class="item_button">Рассчитать<br>стоимость перевозки</button></p>
 					</div>
-					<div class="item_price" style="background: #81B5E4">
+					<div class="item_price item_price_number_2" style="background: #81B5E4">
 						<p class="item_icon">
 							<i class="fa fa-road" aria-hidden="true"></i></i>
 							<span class="distance">до 250 km 
@@ -91,16 +121,16 @@
 								по <span class="distance_price">650 ₽</span>
 							</span>
 						</p>
-						<p class="item_icon">
+						<!-- <p class="item_icon"> -->
 							<!-- <i class="fa fa-sitemap" aria-hidden="true"></i> -->
-							<i class="fa fa-plus" aria-hidden="true"></i> 
-							<span class="price_km"> цена за 1 km 
-								<span class="distance_price">45 ₽</span>
-							</span>
-						</p>
-						<p class="center"><button class="item_button">Рассчитать<br>стоимость перевозки</button></p>
+							<!-- <i class="fa fa-plus" aria-hidden="true"></i>  -->
+							<!-- <span class="price_km"> цена за 1 km  -->
+								<!-- <span class="distance_price">45 ₽</span> -->
+							<!-- </span> -->
+						<!-- </p> -->
+						<p class="text-center"><button class="item_button">Рассчитать<br>стоимость перевозки</button></p>
 					</div>
-					<div class="item_price" style="background: #F7B679">
+					<div class="item_price item_price_number_3" style="background: #F7B679">
 						<p class="item_icon">
 							<i class="fa fa-road" aria-hidden="true"></i>
 							<span class="distance">до 500 km 
@@ -118,10 +148,10 @@
 						</p>
 						<p class="item_icon">
 							<!-- <i class="fa fa-sitemap" aria-hidden="true"></i> -->
-							<i class="fa fa-plus" aria-hidden="true"></i> 
-							<span class="price_km"> цена за 1 km 
-								<span class="distance_price">60 ₽</span>
-							</span>
+							<!-- <i class="fa fa-plus" aria-hidden="true"></i>  -->
+							<!-- <span class="price_km"> цена за 1 km  -->
+								<!-- <span class="distance_price">60 ₽</span> -->
+							<!-- </span> -->
 						</p>
 						<p class="center"><button class="item_button">Рассчитать<br>стоимость перевозки</button></p>
 					</div>
